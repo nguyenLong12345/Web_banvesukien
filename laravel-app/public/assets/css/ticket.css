@@ -1,0 +1,38 @@
+.ticket-card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    margin-bottom: 16px;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.ticket-card img {
+    width: 35%;
+    height: 100%;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.card-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+}
+
+.card-left {
+    flex: 1;
+}
+
+.card-right {
+    margin-left: auto;
+    text-align: left;
+    min-width: auto;
+}
+
+.float-end {
+    font-size: 20px;
+}
