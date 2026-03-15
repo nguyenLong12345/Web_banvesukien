@@ -243,14 +243,14 @@
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
         import { getAuth, signInWithPopup, GoogleAuthProvider } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 
-        // Cấu hình Firebase config lấy từ Firebase Console của bạn
+        // Cấu hình Firebase config
         const firebaseConfig = {
-            apiKey: "[REMOVED]",
-            authDomain: "event-bookings-a9e23.firebaseapp.com",
-            projectId: "event-bookings-a9e23",
-            storageBucket: "event-bookings-a9e23.firebasestorage.app",
-            messagingSenderId: "17505647210",
-            appId: "1:17505647210:web:d3ca38daa2efcebe5ee813"
+            apiKey: "{{ config('firebase.api_key') }}",
+            authDomain: "{{ config('firebase.auth_domain') }}",
+            projectId: "{{ config('firebase.project_id') }}",
+            storageBucket: "{{ config('firebase.storage_bucket') }}",
+            messagingSenderId: "{{ config('firebase.messaging_sender_id') }}",
+            appId: "{{ config('firebase.app_id') }}"
         };
         
         const app = initializeApp(firebaseConfig);
